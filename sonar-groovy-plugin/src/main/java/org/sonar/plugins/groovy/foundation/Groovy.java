@@ -31,7 +31,7 @@ public class Groovy extends AbstractLanguage {
 
   public static final String KEY = "grvy";
   public static final String NAME = "Groovy";
-  public static final String FILE_SUFFIXES_KEY = "sonar.groovy.file.suffixes";
+  public static final String FILE_SUFFIXES_KEY = "sonar.grvy.file.suffixes";
   static final String DEFAULT_FILE_SUFFIXES = ".groovy";
 
   /** Settings of the plugin. */
@@ -50,6 +50,11 @@ public class Groovy extends AbstractLanguage {
       suffixes = StringUtils.split(DEFAULT_FILE_SUFFIXES, ",");
     }
     return addDot(suffixes);
+  }
+
+  @Override
+  public String[] filenamePatterns() {
+    return Arrays.stream(getFileSuffixes()).map(suffix -> "**/*" + suffix).toArray(String[]::new);
   }
 
   private static String[] addDot(String[] suffixes) {
