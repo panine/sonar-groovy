@@ -8,6 +8,14 @@ Get test builds from [GitHub
 Actions](https://github.com/Inform-Software/sonar-groovy/actions) (click on a
 recent run and get the artifacts from the bottom of the page).
 
+## Status
+
+![Maintenance](https://img.shields.io/maintenance/no/2022)
+
+**WARNING**: This project is currently unmaintained. If you want to take over
+maintainership, please contact me (see mail address in recent commits) and I'll
+arrrange a repository move and inform SonarSource about the new maintainer.
+
 ## Description
 
 This plugin enables analysis of Groovy within SonarQube.
@@ -21,11 +29,11 @@ plugin should be used. Additionally, this plugin still supports importing
 binary JaCoCo reports (deprecated, will be removed in the future) and
 [Cobertura](http://cobertura.sourceforge.net/).
 
-Plugin    | 1.4/1.5 | 1.6     | 1.7     | 1.8
-----------|---------|---------|---------|---------
-CodeNarc  | 0.25.2  | 1.4     | 1.4     | 1.6.1
-GMetrics  | 0.7     | 1.0     | 1.0     | 1.1
-SonarQube | 5.6-6.7 | 6.7-7.9 | 7.8-8.9 | 8.0-9.0
+| Plugin    | 1.4/1.5 | 1.6     | 1.7     | 1.8     | 2.0   |
+|-----------|---------|---------|---------|---------|:------|
+| CodeNarc  | 0.25.2  | 1.4     | 1.4     | 1.6.1   | 2 2.0 |
+| GMetrics  | 0.7     | 1.0     | 1.0     | 1.1     | 1.1   |
+| SonarQube | 5.6-6.7 | 6.7-7.9 | 7.8-8.9 | 8.0-9.0 | 10    |
 
 ## Steps to Analyze a Groovy Project
 1. Install SonarQube Server
